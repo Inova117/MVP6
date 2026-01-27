@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 
-export default function HomePage() {
-  // Redirect to dashboard as the main app page
-  redirect('/dashboard')
+export default function RootPage() {
+  // Redirect to home as the main app page
+  redirect('/home')
 }

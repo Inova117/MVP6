@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Navigation } from '@/components/navigation'
 import { BackendFloatButton } from '@/components/backend-float-button'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Lead Finder + CRM | Automate Your Sales Pipeline',
+  title: 'My Network | Stay Connected with People Who Matter',
   description:
-    'AI-powered CRM with automated lead scoring, email campaigns, and visual pipeline management.',
+    'A warm, personal space to nurture relationships and remember meaningful connections.',
 }
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Navigation />
         {children}
         <BackendFloatButton />
       </body>
