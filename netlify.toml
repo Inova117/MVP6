@@ -1,7 +1,7 @@
 # Netlify configuration for Next.js deployment
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 # Next.js plugin for Netlify
 [[plugins]]
